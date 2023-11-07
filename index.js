@@ -39,10 +39,14 @@
 
 //[LOOPS]
 //Loop Standard:    for (initializer; condition; final-expression) { code }
-    //For...of Loop         Ex.   
+    //For...of Loop     --->  for (const item of array) { code to run }
+    //Ex.   
     for (const book of books) { console.log(book)}
 
-    //While Loop            Ex.    
+    //For Loop          --->  for (initializer; condition; final-expression) { code to run }
+
+    //While Loop        --->  initializer   while (condition) { code to run     final-expression }        
+    //Ex.    
     while (i < cats.length) {
         if (i === cats.length - 1) {
             myFavoriteCats += `and ${cats[i]}.`;
@@ -52,7 +56,8 @@
             i++;
         }
 
-    //Do...While Loop       Ex.
+    //Do...While Loop   --->  initializer   do { code to run    final-expression } while (condition)
+    //Ex.
     do {
         if (i === cats.length - 1) {
             myFavoriteCats += `and ${cats[i]}.`;
